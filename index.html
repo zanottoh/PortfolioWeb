@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hernán Zanotto - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#intro">Acerca de mi</a></li>
+            <li><a href="#projects">Mis proyectos</a></li>
+            <li><a href="#skills">Conocimientos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#socials">Redes</a></li> <!-- Nueva sección de redes -->
+        </ul>
+    </nav>
+
+    <!-- Bienvenida inicial con imagen -->
+    <header id="intro">
+        <div class="welcome-container">
+            <div class="welcome-text">
+                <h1 class="fade-in">Bienvenidos</h1>
+                <p class="fade-in-text">
+                    Mi nombre es Hernán Zanotto, y mi camino profesional está orientado hacia la programación y las tecnologías emergentes, siempre con el objetivo de mejorar procesos y enfrentar nuevos retos. Actualmente estudio la Tecnicatura Superior en Programación en la UTN, con un interés constante en resolver problemas complejos y expandir mis conocimientos en desarrollo de software, análisis de datos y mejora continua. Mi meta es contribuir a proyectos que impulsen mejoras en resultados y eficiencia.
+                </p>
+            </div>
+            <div class="welcome-image">
+                <img src="https://media.licdn.com/dms/image/v2/C4D03AQG1t1xyC3mCsw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1623246449584?e=1732147200&v=beta&t=Rb73JLtWCM48-ZjBhythGXPP7WZQlvhsuxRJ_Xk9_0k" alt="Foto de perfil">
+            </div>
+        </div>
+    </header>
+
+  
+
+    <section id="projects">
+        <h2>Mis Proyectos</h2>
+        <ul>
+            <li>
+                <a href="https://github.com/zanottoh/tp-winform-equipo-18A" target="_blank" class="project-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/13138/13138337.png" alt="Proyecto WinForm">
+                    <span class="project-title">Proyecto WinForm - Gestor de Artículos en .NET Framework</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/zanottoh/GestionDeStock" target="_blank" class="project-link">
+                    <img src="C:\Users\herna\Downloads\pngegg.png" alt="Proyecto C++">
+                    <span class="project-title">Proyecto Consola - Gestor de Stock y Ventas en C++</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+
+
+
+
+    <!-- Sección Conocimientos -->
+    <section id="skills">
+        <h2>Conocimientos</h2>
+        <div class="skills-grid">
+            <img src="D:\Descargas\Logo_C_sharp.svg" alt="C#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/2048px-Microsoft_.NET_logo.svg.png" alt=".NET">
+            <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="SQL">
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form action="https://formsubmit.co/hernan.zanotto@gmail.com" method="POST">
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" placeholder="Tu nombre aquí" required><br>
+    
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Tu email aquí" required><br>
+    
+            <label for="phone">Teléfono:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Tu teléfono aquí" required><br>
+    
+            <label for="message">Mensaje:(opcional)</label><br>
+            <textarea id="message" name="message" placeholder="Tu mensaje aquí" required></textarea><br>
+    
+            <!-- Campos ocultos para configuración adicional -->
+            <input type="hidden" name="_subject" value="Nuevo mensaje de tu portfolio">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://tudominio.com/gracias.html">
+    
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <!-- Nueva sección Redes -->
+    <section id="socials">
+        <h2>Redes</h2>
+        <div class="socials-grid">
+            <a href="https://www.linkedin.com/in/hernan-zanotto-8063a695/" target="_blank">
+                <img src="C:\Users\herna\Downloads\pngwing.com (1).png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/zanottoh" target="_blank">
+                <img src="  C:\Users\herna\Downloads\pngegg (1).png" alt="GitHub">
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

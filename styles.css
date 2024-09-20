@@ -1,0 +1,213 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    margin: 0;  
+    font-family: 'Fira Code', monospace;
+    color: white;
+    background: linear-gradient(120deg, #ab35ff, #510d6e, #b99eef);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+    
+}
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* Menú de navegación */
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #ae2bdd;
+}
+/* Bienvenida inicial*/ 
+#intro {
+    text-align: center;
+    padding: 100px 50px;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-container {
+    display: flex;
+    align-items: center;
+}
+.welcome-text {
+    flex: 1;
+    text-align: left;
+}
+.welcome-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+/* Ajustar tamaño del título Bienvenidos */
+.fade-in {
+    opacity: 0;
+    font-size: 100px;
+    animation: fadeInLeft 2s ease forwards;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.fade-in-text {
+    opacity: 0;
+    font-size: 25px;
+    text-align: justify;
+    animation: fadeIn 3s ease 2s forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* Secciones */
+section {
+    padding: 80px 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+section p, section ul {
+    font-size: 18px;
+    line-height: 1.8;
+}
+/* Estilo de proyectos */
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#projects li {
+    width: 250px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+#projects li:hover {
+    transform: scale(1.05);
+}
+
+#projects .project-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    text-decoration: none;
+    color: white;
+}
+
+#projects img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+#projects .project-title {
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+/* Estilo de imágenes en Conocimientos */
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.skills-grid img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+/* Estilos del formulario de contacto */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+input[type="submit"] {
+    background-color: #4b0082;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+input[type="submit"]:hover {
+    background-color: #a418b3;
+}
+/*Nueva sección Redes */
+#socials {
+    padding: 60px 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.socials-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.socials-grid img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+.socials-grid img:hover {
+    transform: scale(1.2);
+}
