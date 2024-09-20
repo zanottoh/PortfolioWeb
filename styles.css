@@ -3,6 +3,20 @@ html {
 }
 
 /*gracias html*/
+.gracias {
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    background: linear-gradient(120deg, #ab35ff, #510d6e, #b99eef);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+   
+}
+.back-link{
+
+    color: white;
+    
+}
 
 
 
