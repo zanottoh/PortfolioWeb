@@ -76,13 +76,15 @@ nav ul li a:hover {
 .welcome-container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .welcome-text {
     flex: 1;
+    font-size: 24px;
     text-align: left;
 }
 .welcome-image img {
-    width: 500x;
+    width: auto;
     height: 500px;
     border-radius: 50%;
     margin-left: 40px;
@@ -236,97 +238,52 @@ input[type="submit"]:hover {
 
 /*responsive*/
 
-/* Para pantallas más pequeñas, como móviles */
+/* Estilos de la sección en pantallas pequeñas */
 @media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    #intro {
-        flex-direction: column;
-        padding: 50px 20px;
-    }
-
-    .welcome-image img {
-        width: 100%;
-        height: auto;
-    }
-
-    .skills-grid {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .skills-grid img {
-        width: 100px;
-        height: 100px;
-    }
-
-    #projects ul {
-        flex-direction: column;
-    }
-
-    #projects li {
-        width: 100%;
-    }
-}
-/* Estilo para pantallas más pequeñas */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    /* Ajustar el contenido de bienvenida */
+    /* Flexbox columna para la sección de bienvenida */
     .welcome-container {
         flex-direction: column;
         text-align: center;
+        padding: 20px; /* Reduce el padding */
     }
 
+    /* Ajuste de imagen de bienvenida */
     .welcome-image img {
-        margin: 20px 0;
         width: 80%;
+        height: auto;
+        margin: 20px 0;
     }
 
-    /* Ajustar las tarjetas de proyectos */
-    #projects ul {
-        flex-direction: column;
-        gap: 20px;
+    /* Ajuste del texto de bienvenida */
+    .welcome-text {
+        font-size: 18px; /* Reducir tamaño del texto */
+        line-height: 1.5;
+        text-align: center; /* Centrar texto */
+        padding: 10px 0; /* Reducir padding */
     }
 
-    #projects li {
-        width: 100%;
-    }
-
-    /* Ajustar la grilla de habilidades */
-    .skills-grid {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    /* Redimensionar imágenes en habilidades */
-    .skills-grid img {
-        width: 80px;
-        height: 80px;
-    }
-}
-
-/* Para pantallas aún más pequeñas, como móviles */
-@media (max-width: 480px) {
     .fade-in {
         font-size: 50px; /* Reducir tamaño del título */
     }
 
     .fade-in-text {
-        font-size: 18px; /* Reducir texto de bienvenida */
-    }
-
-    .skills-grid img {
-        width: 60px;
-        height: 60px;
+        font-size: 16px; /* Reducir texto de bienvenida */
+        line-height: 1.4;
     }
 }
 
+/* Estilos para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+    .fade-in {
+        font-size: 40px;
+    }
 
+    .fade-in-text {
+        font-size: 14px;
+        line-height: 1.4;
+    }
 
+    .welcome-text {
+        font-size: 14px;
+    }
+}
