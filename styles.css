@@ -82,11 +82,16 @@ nav ul li a:hover {
     text-align: left;
 }
 .welcome-image img {
-    width: 300px;
-    height: 300px;
+    width: 500x;
+    height: 500px;
     border-radius: 50%;
     margin-left: 40px;
+    animation: fadeInLeft 2s ease forwards;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor de la imagen */
 }
+
+
+
 /* Ajustar tamaño del título Bienvenidos */
 .fade-in {
     opacity: 0;
@@ -227,3 +232,101 @@ input[type="submit"]:hover {
 .socials-grid img:hover {
     transform: scale(1.2);
 }
+
+
+/*responsive*/
+
+/* Para pantallas más pequeñas, como móviles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #intro {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .welcome-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .skills-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skills-grid img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #projects ul {
+        flex-direction: column;
+    }
+
+    #projects li {
+        width: 100%;
+    }
+}
+/* Estilo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Ajustar el contenido de bienvenida */
+    .welcome-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .welcome-image img {
+        margin: 20px 0;
+        width: 80%;
+    }
+
+    /* Ajustar las tarjetas de proyectos */
+    #projects ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #projects li {
+        width: 100%;
+    }
+
+    /* Ajustar la grilla de habilidades */
+    .skills-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Redimensionar imágenes en habilidades */
+    .skills-grid img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Para pantallas aún más pequeñas, como móviles */
+@media (max-width: 480px) {
+    .fade-in {
+        font-size: 50px; /* Reducir tamaño del título */
+    }
+
+    .fade-in-text {
+        font-size: 18px; /* Reducir texto de bienvenida */
+    }
+
+    .skills-grid img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+
