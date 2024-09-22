@@ -94,7 +94,7 @@ nav ul li a:hover {
 
 
 
-/* Ajustar tamaño del título Bienvenidos */
+
 .fade-in {
     opacity: 0;
     font-size: 100px;
@@ -216,7 +216,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #a418b3;
 }
-/*Nueva sección Redes */
+/*Redes */
 #socials {
     padding: 60px 50px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -247,32 +247,32 @@ input[type="submit"]:hover {
         padding: 20px; /* Reduce el padding */
     }
 
-    /* Ajuste de imagen de bienvenida */
+
     .welcome-image img {
         width: 80%;
         height: auto;
         margin: 20px 0;
     }
 
-    /* Ajuste del texto de bienvenida */
+   
     .welcome-text {
-        font-size: 18px; /* Reducir tamaño del texto */
+        font-size: 18px; 
         line-height: 1.5;
-        text-align: center; /* Centrar texto */
-        padding: 10px 0; /* Reducir padding */
+        text-align: center; 
+        padding: 10px 0; 
     }
 
     .fade-in {
-        font-size: 50px; /* Reducir tamaño del título */
+        font-size: 50px; 
     }
 
     .fade-in-text {
-        font-size: 16px; /* Reducir texto de bienvenida */
+        font-size: 16px; 
         line-height: 1.4;
     }
 }
 
-/* Estilos para pantallas aún más pequeñas */
+
 @media (max-width: 480px) {
     .fade-in {
         font-size: 40px;
