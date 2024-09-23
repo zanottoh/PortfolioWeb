@@ -188,6 +188,7 @@ section p, section ul {
     display: flex;
     justify-content: center;
     gap: 100px;
+    flex-wrap: wrap;
 }
 .skills-grid img {
     width: 150px;
